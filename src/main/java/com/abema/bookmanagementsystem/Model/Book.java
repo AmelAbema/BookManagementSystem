@@ -12,10 +12,21 @@ public class Book {
     private String name;
     @Column(name = "author")
     private String author;
+    @Column(name = "rating")
+    private int rating;
 
-    public Book(String name, String author) {
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public Book(String name, String author, int rating) {
         this.name = name;
         this.author = author;
+        this.rating = rating;
     }
 
     public Book() {

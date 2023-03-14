@@ -17,4 +17,9 @@ public class BookServiceImp implements BookService  {
     public List<Book> getALLBooks() {
         return bookRepository.findAll();
     }
+
+    @Override
+    public void saveBook(Book book) {
+        this.bookRepository.save(book);
+    }
 }

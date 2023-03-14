@@ -8,4 +8,5 @@ import java.util.List;
 @Repository
 public interface BookService {
     List<Book> getALLBooks();
+    void saveBook(Book book);
 }
